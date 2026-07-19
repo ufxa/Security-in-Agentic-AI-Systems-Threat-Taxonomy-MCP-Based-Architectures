@@ -1,0 +1,34 @@
+\section*{Glossary of Technical Terms}
+\label{sec:glossary}
+
+\noindent\textbf{ATS} (Agent Trust Score): Quantitative metric (0--1) computed as $\mathrm{ATS} = 0.4C + 0.3R + 0.2B + 0.1A$, where C is cryptographic evidence, R is reputation, B is behavioral anomaly, and A is attestation strength. Minimum threshold 0.50 for operation authorization.
+
+\noindent\textbf{CVSS} (Common Vulnerability Scoring System): Standardized vulnerability severity rating from 0 (none) to 10 (critical). CVE-2025-6514 has CVSS 9.6.
+
+\noindent\textbf{CVE} (Common Vulnerabilities and Exposures): Unique identifier for publicly disclosed security vulnerabilities. VulnerableMCP dataset contains 24 CVEs.
+
+\noindent\textbf{MCP} (Model Context Protocol): Open standard for AI orchestration enabling structured communication between agents, servers, and language models.
+
+\noindent\textbf{AEGIS-MCP} (Adaptive Engine for Guardian-Integrated Security in MCP): Five-layer runtime defense framework against MCP-based agentic attacks.
+
+\noindent\textbf{TI} (Tool Injection): Attack vector (TI-1 through TI-4) where attackers inject malicious tool schemas to deceive agents.
+
+\noindent\textbf{MP} (Memory Poisoning): Attack vector (MP-1 through MP-3) corrupting agent memory contexts and historical context windows.
+
+\noindent\textbf{PM} (Prompt Manipulation): Attack vector (PM-1 through PM-3) including direct prompt replacement and indirect injection via user inputs.
+
+\noindent\textbf{TC} (Transport Compromise): Attack vector (TC-1 through TC-2) targeting network-level interception of MCP JSON-RPC messages.
+
+\noindent\textbf{SC} (Supply Chain Attack): Attack vector (SC-1 through SC-4) including typosquatting, malicious updates, and package manager compromise.
+
+\noindent\textbf{AA} (Agent-to-Agent Exploitation): Attack vector (AA-1 through AA-3) targeting lateral movement across agent hierarchies.
+
+\noindent\textbf{TTRC} (Time-to-Remediation-Complete): Duration from attack detection to full containment. AEGIS-MCP achieves 2.4 seconds average.
+
+\noindent\textbf{FPR} (False Positive Rate): Proportion of benign operations incorrectly flagged as attacks. AEGIS-MCP maintains FPR $<3\%$.
+
+\noindent\textbf{JSON-RPC} (JavaScript Object Notation Remote Procedure Call): Lightweight protocol for inter-process communication used by MCP implementations.
+
+\noindent\textbf{PDF-UA} (PDF/Universal Accessibility): International standard (ISO 14289) for accessible PDF documents tagged with semantic structure for screen readers.
+
+\noindent\textbf{WCAG} (Web Content Accessibility Guidelines): WCAG 2.1 Level AA requires 4.5:1 color contrast ratio and keyboard navigation support.

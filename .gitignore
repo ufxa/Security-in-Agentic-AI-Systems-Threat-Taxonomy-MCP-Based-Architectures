@@ -1,0 +1,36 @@
+# LaTeX build artifacts
+manuscript/build/
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/*.synctex.gz
+manuscript/main.tex.backup
+
+# Temporary PDFs (keep only final)
+artigo_FINAL_DrawIO.pdf
+artigo_FINAL_MODERNO.pdf
+artigo_FINAL_TAXONOMY.pdf
+artigo_final.pdf
+artigo_final_v2.pdf
+artigo_FINAL_COMPLETO.pdf
+
+# Planning/temp docs
+FASE_1_2_3_PLANO.md
+PLANO_IMPLEMENTACAO_COMPLETA.md
+LISTA_MUDANCAS_RESUMIDA.txt
+POS_COMPILACAO.md
+COMPILACAO_SUCESSO.md
+ENTREGA_FINAL_DIAGRAMA_MODERNO.md
+FINAL_PDF_PRONTO.md
+INSTRUCOES_DRAWIO.md
+INSTRUÇÕES_COMPILAÇÃO_PDF.md
+README_ENTREGA_FINAL.md
+README_FINAL.md
+
+# OS
+.DS_Store
+Thumbs.db

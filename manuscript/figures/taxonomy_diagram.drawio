@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="Claude">
+  <diagram id="taxonomy" name="MCP-TaxSec Threat Taxonomy">
+    <mxGraphModel dx="1006" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="center" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1" value="MCP Attack Vectors" vertex="1">
+          <mxGeometry height="50" width="150" x="292" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ti" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Tool Injection (TI)" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ti" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="ti">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Memory Poisoning (MP)" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_mp" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="mp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="165" />
+              <mxPoint x="280" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Prompt Manipulation (PM)" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pm" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="pm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="165" />
+              <mxPoint x="450" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Transport Compromise (TC)" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tc" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="tc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Supply Chain Attack (SC)" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sc" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="sc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="290" />
+              <mxPoint x="280" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aa" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;strokeColor=#000000;" value="Agent-to-Agent Exploitation (AA)" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_aa" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.5" target="aa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="290" />
+              <mxPoint x="450" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wV6ye-kZ9bXRoi0nNDWI-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontSize=10;fontStyle=1;arcSize=0;strokeColor=#000000;" value="&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;MCP-TaxSec Threat Taxonomy&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="380" width="650" x="40" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

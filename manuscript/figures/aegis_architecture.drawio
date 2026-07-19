@@ -1,0 +1,43 @@
+<mxfile host="Electron">
+  <diagram id="1" name="AEGIS-MCP Architecture">
+    <mxGraphModel dx="1006" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;strokeColor=#000000;" value="L1: Protocol Interception&#xa;Network boundary, JSON-RPC validation" vertex="1">
+          <mxGeometry height="70" width="280" x="100" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;strokeColor=#000000;" value="L2: Policy Enforcement&#xa;Capability-based access control" vertex="1">
+          <mxGeometry height="70" width="280" x="430" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;strokeColor=#000000;" value="L3: Trust Attestation (ATS)&#xa;Agent Trust Score computation" vertex="1">
+          <mxGeometry height="70" width="160" x="550" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;strokeColor=#000000;" value="L4: Forensic Audit Trail&#xa;Immutable logs of all decisions" vertex="1">
+          <mxGeometry height="70" width="170" x="330" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;strokeColor=#000000;" value="L5: Alert &amp; Response&#xa;Real-time alerts, Automated response" vertex="1">
+          <mxGeometry height="70" width="185" x="100" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#000000;strokeWidth=1;" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#000000;strokeWidth=1;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#000000;strokeWidth=1;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#000000;strokeWidth=1;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontStyle=2;fontColor=#00008B;strokeColor=none;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Dataflow: Network to Security Checks to Response&lt;/span&gt;" vertex="1">
+          <mxGeometry height="25" width="270" x="285" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="90-aQuxKtdaeYnzfMllW-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontSize=10;fontStyle=1;align=center;arcSize=0;strokeColor=#000000;" value="&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;AEGIS-MCP: 5-Layer Defense Architecture&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; white-space: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="630" x="90" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
