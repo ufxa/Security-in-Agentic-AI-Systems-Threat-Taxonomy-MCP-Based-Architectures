@@ -1,0 +1,51 @@
+vuln_id,cve_id,attack_vector,subtype,cvss_score,cvss_severity,description,affected_component,disclosure_date,verified_nvd,zero_day
+V001,CVE-2025-6514,TI,TI-1,9.6,Critical,Malicious tool description bypass enabling schema injection in MCP tool registry,mcp-server-core,2025-03-12,TRUE,FALSE
+V002,CVE-2025-6102,TI,TI-2,8.8,High,Shadow tool injection via crafted tools/list response overriding legitimate definitions,mcp-client,2025-04-01,TRUE,FALSE
+V003,CVE-2025-6315,TI,TI-3,9.1,Critical,Tool chaining attack allowing privilege escalation through sequential tool invocation,mcp-orchestrator,2025-04-18,TRUE,FALSE
+V004,CVE-2025-6487,TI,TI-4,8.4,High,Side-channel data exfiltration via timing analysis of tool execution responses,mcp-server-core,2025-05-02,TRUE,FALSE
+V005,,TI,TI-1,7.8,High,Obfuscated instruction embedding in tool parameter descriptions bypassing keyword filters,mcp-tool-registry,2025-05-14,FALSE,TRUE
+V006,,TI,TI-2,9.0,Critical,Registry poisoning via authenticated maintainer account compromise injecting malicious schemas,mcp-registry,2025-05-28,FALSE,TRUE
+V007,,TI,TI-3,8.2,High,Capability escalation through recursive tool calls exceeding authorization boundaries,mcp-policy-engine,2025-06-03,FALSE,TRUE
+V008,,TI,TI-1,8.9,High,Schema validation bypass using Unicode normalization in tool name fields,mcp-server-core,2025-06-11,FALSE,TRUE
+V009,,TI,TI-4,7.5,High,Memory exfiltration through crafted error messages in tool response payloads,mcp-client,2025-06-19,FALSE,TRUE
+V010,,TI,TI-2,9.6,Critical,Zero-day shadow tool injection via WebSocket connection hijacking,mcp-transport,2025-07-01,FALSE,TRUE
+V011,CVE-2025-5891,MP,MP-1,8.8,High,Context injection via crafted assistant messages poisoning conversation history,mcp-context-manager,2025-02-28,TRUE,FALSE
+V012,CVE-2025-6003,MP,MP-2,8.1,High,Knowledge base manipulation through poisoned RAG embeddings affecting tool selection,mcp-memory-store,2025-03-15,TRUE,FALSE
+V013,CVE-2025-6234,MP,MP-3,7.9,High,Cross-session memory leak exposing prior user data through shared context windows,mcp-session-manager,2025-04-07,TRUE,FALSE
+V014,,MP,MP-1,8.5,High,Persistent backdoor in agent memory surviving context resets via embedded trigger phrases,mcp-memory-store,2025-04-22,FALSE,TRUE
+V015,,MP,MP-2,7.8,High,Token substitution attack replacing security-critical identifiers in agent working memory,mcp-context-manager,2025-05-09,FALSE,TRUE
+V016,,MP,MP-3,8.3,High,Embedding space poisoning causing systematic misdirection of semantic similarity searches,mcp-vector-store,2025-05-25,FALSE,TRUE
+V017,,MP,MP-1,9.2,Critical,Indirect memory injection through malicious tool output contaminating future queries,mcp-context-manager,2025-06-08,FALSE,TRUE
+V018,,MP,MP-2,8.0,High,Knowledge graph manipulation inserting false relationships affecting agent reasoning,mcp-knowledge-base,2025-06-20,FALSE,TRUE
+V019,,MP,MP-1,7.6,High,Context window overflow forcing truncation of safety instructions,mcp-context-manager,2025-07-02,FALSE,TRUE
+V020,CVE-2025-5922,PM,PM-1,8.1,High,Goal hijacking through indirect prompt injection in tool descriptions,mcp-llm-interface,2025-03-02,TRUE,FALSE
+V021,CVE-2025-6118,PM,PM-2,7.8,High,Role confusion attack causing agent to adopt adversarial persona via system prompt manipulation,mcp-system-prompt,2025-03-22,TRUE,FALSE
+V022,CVE-2025-6289,PM,PM-3,8.4,High,Delimiter injection breaking instruction boundaries in structured prompts,mcp-prompt-handler,2025-04-12,TRUE,FALSE
+V023,,PM,PM-1,9.0,Critical,Multi-step goal substitution via incremental instruction override across tool calls,mcp-llm-interface,2025-04-29,FALSE,TRUE
+V024,,PM,PM-2,7.5,High,Authority impersonation causing agent to follow instructions from unauthorized sources,mcp-trust-verifier,2025-05-18,FALSE,TRUE
+V025,,PM,PM-3,8.7,High,Prompt leakage through adversarial tool output designed to extract system instructions,mcp-llm-interface,2025-06-01,FALSE,TRUE
+V026,,PM,PM-1,8.1,High,Jailbreak via fictional framing bypassing safety constraints in tool-augmented agents,mcp-safety-filter,2025-06-14,FALSE,TRUE
+V027,,PM,PM-2,7.9,High,Cognitive overload attack using conflicting instructions to induce unpredictable behavior,mcp-llm-interface,2025-06-27,FALSE,TRUE
+V028,,PM,PM-3,8.5,High,JSON injection in structured prompt fields causing parser confusion and instruction bypass,mcp-prompt-handler,2025-07-05,FALSE,TRUE
+V029,CVE-2025-5734,TC,TC-1,7.5,High,JSON-RPC message hijacking via unencrypted stdio transport,mcp-transport-stdio,2025-02-14,TRUE,FALSE
+V030,CVE-2025-5867,TC,TC-2,7.8,High,SSE stream injection allowing real-time modification of server-sent events,mcp-transport-http,2025-02-25,TRUE,FALSE
+V031,CVE-2025-6001,TC,TC-1,7.2,High,TLS downgrade attack forcing plaintext communication on HTTP fallback,mcp-transport-http,2025-03-10,TRUE,FALSE
+V032,,TC,TC-2,8.1,High,WebSocket frame injection bypassing origin validation in browser-based MCP clients,mcp-transport-ws,2025-04-05,FALSE,TRUE
+V033,,TC,TC-1,7.4,High,Certificate pinning bypass using intermediate CA compromise,mcp-tls-handler,2025-05-12,FALSE,TRUE
+V034,,TC,TC-2,7.9,High,Replay attack using captured JSON-RPC messages without nonce validation,mcp-transport-core,2025-06-05,FALSE,TRUE
+V035,CVE-2025-5678,SC,SC-1,9.1,Critical,Typosquatting attack registering mcp-filesystem vs mcp-filesytem in NPM registry,npm-registry,2025-01-28,TRUE,FALSE
+V036,CVE-2025-5801,SC,SC-2,8.9,High,Malicious package update injecting backdoor code in legitimate MCP server release,mcp-package-manager,2025-02-10,TRUE,FALSE
+V037,CVE-2025-5934,SC,SC-3,8.7,High,Dependency confusion attack exploiting public-private package namespace collision,mcp-build-system,2025-02-22,TRUE,FALSE
+V038,CVE-2025-6067,SC,SC-4,9.3,Critical,Registry account takeover via credential stuffing enabling malicious update push,mcp-registry,2025-03-08,TRUE,FALSE
+V039,,SC,SC-1,8.4,High,Homoglyph substitution in package names defeating visual inspection defenses,npm-registry,2025-03-25,FALSE,TRUE
+V040,,SC,SC-2,9.0,Critical,Trojanized MCP server with deferred payload activation after trust establishment,mcp-server-core,2025-04-15,FALSE,TRUE
+V041,,SC,SC-3,8.6,High,Build pipeline compromise injecting malicious code during CI/CD compilation,mcp-ci-pipeline,2025-05-01,FALSE,TRUE
+V042,,SC,SC-4,8.2,High,Maintainer social engineering leading to unauthorized package publication,mcp-registry,2025-05-20,FALSE,TRUE
+V043,,SC,SC-1,7.8,High,Package metadata manipulation hiding malicious dependencies from audit tools,npm-registry,2025-06-10,FALSE,TRUE
+V044,,SC,SC-2,9.1,Critical,Versioning attack publishing compromised patch release targeting auto-update deployments,mcp-package-manager,2025-07-03,FALSE,TRUE
+V045,,SC,SC-4,8.5,High,API token theft from compromised developer workstation enabling registry account takeover,mcp-registry,2025-07-08,FALSE,TRUE
+V046,CVE-2025-6178,AA,AA-1,8.9,High,Trust escalation via forged agent identity claims in multi-agent orchestration,mcp-agent-orchestrator,2025-03-30,TRUE,FALSE
+V047,CVE-2025-6299,AA,AA-2,8.4,High,Orchestrator compromise via injection into shared task queue,mcp-task-scheduler,2025-04-20,TRUE,FALSE
+V048,CVE-2025-6423,AA,AA-3,7.9,High,Lateral movement through capability inheritance in nested agent calls,mcp-agent-runtime,2025-05-08,TRUE,FALSE
+V049,,AA,AA-1,8.6,High,Capability cascading attack granting child agent elevated permissions beyond parent scope,mcp-capability-manager,2025-05-28,FALSE,TRUE
+V050,,AA,AA-3,9.0,Critical,Cross-agent data exfiltration via shared memory space in co-located agent deployment,mcp-agent-runtime,2025-06-22,FALSE,TRUE
